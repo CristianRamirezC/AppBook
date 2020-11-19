@@ -5,11 +5,14 @@
  */
 package test;
 
-import data.DBconnection;
+//import data.DBconnection;
+import business.BBooks;
 
 
 public class test {
     public static void main(String[] args) {
+        
+        /*   DB connection test
         DBconnection db = new DBconnection();
         
         if(db.connectDB()!=null){
@@ -18,6 +21,14 @@ public class test {
         }else{
             System.out.println("Disconnected");
         }
+        */
+        
+        
+        
+        // Test de capa de negocios
+       // BBooks.add("Programacion", "Cristian", "Java editors", "19/11/20", "Mooy bueno", "esto no es noporxd");
+        System.out.println(BBooks.gettotalBooks());
+        
     }
     
 }

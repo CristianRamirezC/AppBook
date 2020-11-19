@@ -25,23 +25,21 @@ public class DBooks {
      *
      * @param id
      * @param title
+     * @param authors
      * @param editors
      * @param publicationyear
      * @param comments
      * @param image
-     * @param response
-     * @param connection
      */
     //Builder
-    public DBooks(int id, String title, String editors, String publicationyear, String comments, String image, String response, DBconnection connection) {
+    public DBooks(int id, String title, String authors, String editors, String publicationyear, String comments, String image) {
         this.id = id;
         this.title = title;
+        this.authors=authors;
         this.editors = editors;
         this.publicationyear = publicationyear;
         this.comments = comments;
         this.image = image;
-        this.response = response;
-        this.connection = connection;
     }
 
     //Agregar libros a la BD
